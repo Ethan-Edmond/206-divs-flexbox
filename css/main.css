@@ -97,15 +97,30 @@ textarea {
 
 
 html {
-  background-color: #233d3d;
+  background: black url("../img/background-art.png") no-repeat;
+  background-size: cover;
+  background-position: right bottom;
   height: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
+  padding: 0px 10px;
   font-size: 1.25em;
   height: 100%;
+  box-sizing: border-box;
+}
+
+header {
+    font-size: 4rem;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px 100px;
+    overflow: auto;
+    padding-left: 25%;
+    padding-right: 10%;
+    font-weight: bold;
+    margin-top: 10px;
+
 }
 
 .wrapper {
@@ -114,13 +129,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(255,255,255,0.1);
+  padding: 10px 50px;
+  margin-top: 10px;
+  border-radius: 10px 100px;
 }
 
+.content {
+    padding: 0px 5%;
+    text-align: justify;
+}
 .div-1, .div-2, .div-3 {
-  color: #fff;
+  color: #222;
   line-height: 1.5em;
-  font-size: 1em;
-  background-color: #233d3d;
+  font-size: 1rem;
+  padding: 1%;
   height: 300px;
   display: flex;
 
@@ -131,7 +154,7 @@ body {
 }
 
 .vert-between {
-    border: 1px solid #417070;
+    border: 1px solid #222;
     height: 200px;
     display: flex;
     align-items: center;
